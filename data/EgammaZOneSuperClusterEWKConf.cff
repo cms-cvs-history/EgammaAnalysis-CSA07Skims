@@ -1,0 +1,15 @@
+#
+# Reuse EWK modules, but reconfigure for higher mass cut
+#
+
+# This is the only real change
+module EgammaZOneSuperCluster = zToEEOneSuperCluster from "ElectroWeakAnalysis/ZReco/data/zToEEOneSuperCluster.cfi"
+replace EgammaZOneSuperCluster.massMin = 60.
+
+
+# change the input tags to the changed module
+module EgammaZOneSuperClusterGenParticlesMatch = zToEEOneSuperClusterGenParticlesMatch from  "ElectroWeakAnalysis/ZReco/data/zToEEOneSuperClusterGenParticlesMatch.cfi"
+replace EgammaZOneSuperClusterGenParticlesMatch.src = EgammaZOneSuperCluster
+
+module EgammaZOneSuperClusterFilter = zToEEOneSuperClusterFilter from "ElectroWeakAnalysis/ZReco/data/zToEEOneSuperClusterFilter.cfi"
+replace EgammaZOneSuperClusterFilter.src = EgammaZOneSuperCluster

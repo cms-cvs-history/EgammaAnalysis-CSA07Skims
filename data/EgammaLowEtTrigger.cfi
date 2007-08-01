@@ -1,0 +1,15 @@
+#
+# Egamma skim control sample
+#
+# use standart single electron trigger
+#
+
+module EgammaLowEtTrigger =  HLTHighLevel{
+        InputTag TriggerResultsTag = TriggerResults
+        bool byName = true
+        bool andOr= true
+        vstring HLTPaths = {"HLT1ElectronRelaxed"}
+        }
+
+
+

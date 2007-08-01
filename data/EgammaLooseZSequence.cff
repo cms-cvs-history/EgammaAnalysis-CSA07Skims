@@ -1,0 +1,31 @@
+#
+# Egamma skim, control sample
+#
+# reuse the EWK loose Z chain, but with tighter mass cut
+# 
+
+include "EgammaAnalysis/CSA07Skims/data/EgammaLowEtTrigger.cfi"
+
+#
+# Redo EWK sequence "electron + track with tighter cut"
+#
+
+include "EgammaAnalysis/CSA07Skims/data/EgammaZOneTrackEWKConf.cff"
+
+sequence EgammaZOneTrackReco ={
+  EgammaLowEtTrigger &   
+  EgammaZOneTrack &
+  EgammaZOneTrackGenParticlesMatch &
+  EgammaZOneTrackFilter 
+}
+
+
+include "EgammaAnalysis/CSA07Skims/data/EgammaZOneSuperClusterEWKConf.cff"
+sequence EgammaZOneSuperClusterReco ={
+  EgammaLowEtTrigger &   
+  EgammaZOneSuperCluster &
+  EgammaZOneSuperClusterGenParticlesMatch &
+  EgammaZOneSuperClusterFilter 
+}
+
+

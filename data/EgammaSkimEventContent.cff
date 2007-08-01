@@ -1,0 +1,32 @@
+#
+# Currently no private output for the Egamma skim, maybe add something later
+#
+
+block EgammaSkimEventContent = {
+  untracked vstring outputCommands = {
+
+  }
+}
+
+#
+# keep only very high pt clusters for control studies
+#
+block EgammaVeryHighEtEventSelection = {
+  untracked PSet SelectEvents = {
+    vstring SelectEvents = {
+      "EgammaVeryHighEt"
+    }
+  }
+}
+
+#
+# Loose Z selection developed by EWK group for control sample
+#
+block EgammaLooseZEventSelection = {
+  untracked PSet SelectEvents = {
+    vstring SelectEvents = {
+      "EgammaLooseZCluster",
+      "EgammaLooseZTrack"
+    }
+  }
+}

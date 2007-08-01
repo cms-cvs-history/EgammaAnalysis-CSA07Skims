@@ -1,0 +1,14 @@
+#
+# Egamma skim, control sample
+#
+# reuse the EWK loose Z chain, but with tighter mass cut
+
+include "ElectroWeakAnalysis/ZReco/data/zToEESequences.cff"
+
+path electronRecoForZToEEPath = { electronRecoForZToEE } 
+
+
+include "EgammaAnalysis/CSA07Skims/data/EgammaLooseZSequence.cff"
+
+path EgammaLooseZTrack = { EgammaZOneTrackReco }
+path EgammaLooseZCluster = { EgammaZOneSuperClusterReco }
