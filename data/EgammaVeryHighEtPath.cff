@@ -6,5 +6,5 @@
 
 include "EgammaAnalysis/CSA07Skims/data/EgammaVeryHighEtTrigger.cfi"
 
-path EgammaVeryHighEt = { EgammaVeryHighEtTrigger }
+path egammaVeryHighEt = { EgammaVeryHighEtTrigger }
                           

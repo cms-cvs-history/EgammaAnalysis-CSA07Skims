@@ -10,5 +10,5 @@ path electronRecoForZToEEPath = { electronRecoForZToEE }
 
 include "EgammaAnalysis/CSA07Skims/data/EgammaLooseZSequence.cff"
 
-path EgammaLooseZTrack = { EgammaZOneTrackReco }
-path EgammaLooseZCluster = { EgammaZOneSuperClusterReco }
+path egammaLooseZTrack = { EgammaZOneTrackReco }
+path egammaLooseZCluster = { EgammaZOneSuperClusterReco }
