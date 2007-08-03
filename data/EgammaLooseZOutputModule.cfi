@@ -1,0 +1,23 @@
+include "EgammaAnalysis/CSA07Skims/data/EgammaSkimEventContent.cff"
+include "EgammaAnalysis/CSA07Skims/data/AODSIMEgammaSkimEventContent.cff"
+include "EgammaAnalysis/CSA07Skims/data/RECOSIMEgammaSkimEventContent.cff"
+
+module egammaLooseZOutputModuleAODSIM = PoolOutputModule {
+  untracked string fileName = "egammaLooseZAODSIM.root"
+  using AODSIMEgammaSkimEventContent
+  using egammaLooseZEventSelection
+  untracked PSet datasets = {
+    untracked string dataTier = "USER"
+    untracked string filterName = "egammaLooseZAODSIM"
+  }
+}
+
+module egammaLooseZOutputModuleRECOSIM = PoolOutputModule {
+  untracked string fileName = "egammaLooseZRECOSIM.root"
+  using RECOSIMEgammaSkimEventContent
+  using egammaLooseZEventSelection
+  untracked PSet datasets = {
+    untracked string dataTier = "USER"
+    untracked string filterName = "egammaLooseZRECOSIM"
+  }
+}

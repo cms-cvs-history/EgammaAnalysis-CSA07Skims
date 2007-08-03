@@ -1,0 +1,14 @@
+# Egamma RECOSIM event content 
+# Saves standard RECOSIM and Egamma-specific data (which might not be empty)
+#
+
+include "Configuration/EventContent/data/EventContent.cff"
+include "EgammaAnalysis/CSA07Skims/data/EgammaSkimEventContent.cff"
+
+block RECOSIMEgammaSkimEventContent = {
+  untracked vstring outputCommands = {
+  }
+}
+
+replace RECOSIMEgammaSkimEventContent.outputCommands += RECOSIMEventContent.outputCommands
+replace RECOSIMEgammaSkimEventContent.outputCommands += egammaSkimEventContent.outputCommands
