@@ -1,0 +1,30 @@
+include "Configuration/EventContent/data/EventContent.cff"   
+
+    module AODSIMZJetEventContent = PoolOutputModule
+    {
+        untracked string fileName = "ZJetFilteredAODSIM.root"
+        using AODSIMEventContent
+        untracked PSet SelectEvents = {
+		vstring SelectEvents = {"electronFilterPath","muonFilterPath"}
+	}
+        untracked PSet datasets ={
+    		untracked string dataTier = "AODSIM"
+   		untracked string filterName = "EgammaZJetFilter"
+        }
+    }
+
+
+    module RECOSIMZJetEventContent = PoolOutputModule
+    {
+        untracked string fileName = "ZJetFilteredRECOSIM.root"
+        using RECOSIMEventContent
+        untracked PSet SelectEvents = {
+		vstring SelectEvents = {"electronFilterPath","muonFilterPath"}
+	}
+        untracked PSet datasets ={
+    		untracked string dataTier = "RECOSIM"
+   		untracked string filterName = "EgammaZJetFilter"
+        }
+    }
+
+
