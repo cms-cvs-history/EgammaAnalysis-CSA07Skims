@@ -1,0 +1,8 @@
+include "EgammaAnalysis/CSA07Skims/data/EgammaWJetToEleHLT.cfi"
+include "EgammaAnalysis/CSA07Skims/data/EgammaWJetToMuHLT.cfi"
+
+include "EgammaAnalysis/CSA07Skims/data/EgammaWJetToElePlusProbe.cfi" 
+include "EgammaAnalysis/CSA07Skims/data/EgammaWJetToMuPlusProbe.cfi" 
+
+path electronFilterPath = {EgammaWJetToEleHLT & EgammaWJetToElePlusProbe} 
+path     muonFilterPath = {EgammaWJetToMuHLT  & EgammaWJetToMuPlusProbe} 
