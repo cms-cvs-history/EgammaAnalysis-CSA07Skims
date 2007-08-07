@@ -1,26 +1,29 @@
-include "EgammaAnalysis/CSA07Skims/data/EgammaSkimEventContent.cff"
-include "EgammaAnalysis/CSA07Skims/data/AODSIMEgammaSkimEventContent.cff"
-include "EgammaAnalysis/CSA07Skims/data/RECOSIMEgammaSkimEventContent.cff"
+include "Configuration/EventContent/data/EventContent.cff"   
 
-    module egammaWPlusEMOrJetOutputModuleAODSIM = PoolOutputModule
+    module AODSIMWJetEventContent = PoolOutputModule
     {
-      untracked string fileName = "egammaWPlusEMOrJetAODSIM.root"
-      using AODSIMEgammaSkimEventContent
-      using egammaWPlusEMOrJetEventSelection
-      untracked PSet datasets = {
-	untracked string dataTier = "USER"
-	untracked string filterName = "egammaWPlusEMOrJetAODSIM"
+        untracked string fileName = "WJetFilteredAODSIM.root"
+        using AODSIMEventContent
+        untracked PSet SelectEvents = {
+		vstring SelectEvents = {"electronFilterPath","muonFilterPath"}
+	}
+        untracked PSet datasets ={
+    		untracked string dataTier = "AODSIM"
+   		untracked string filterName = "EgammaWJetFilter"
         }
-     }
+    }
 
-    module egammaWPlusEMOrJetOutputModuleRECOSIM = PoolOutputModule
+
+    module RECOSIMWJetEventContent = PoolOutputModule
     {
-      untracked string fileName = "egammaWPlusEMOrJetRECOSIM.root"
-      using RECOSIMEgammaSkimEventContent
-      using egammaWPlusEMOrJetEventSelection
-      untracked PSet datasets = {
-	untracked string dataTier = "USER"
-	untracked string filterName = "egammaWPlusEMOrJetRECOSIM"
+        untracked string fileName = "WJetFilteredRECOSIM.root"
+        using RECOSIMEventContent
+        untracked PSet SelectEvents = {
+		vstring SelectEvents = {"electronFilterPath","muonFilterPath"}
+	}
+        untracked PSet datasets ={
+    		untracked string dataTier = "RECOSIM"
+   		untracked string filterName = "EgammaWJetFilter"
         }
-     }
+    }
 
