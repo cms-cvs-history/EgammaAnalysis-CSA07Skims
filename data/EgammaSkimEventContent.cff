@@ -31,3 +31,26 @@ block egammaVeryHighEtEventSelection = {
   }
 }
 
+#
+# W + EM object or Jet for fake rate studies
+#
+block egammaWPlusEMOrJetEventSelection = {
+untracked PSet SelectEvents = {
+  vstring SelectEvents = {
+     "electronFilterPath",
+     "muonFilterPath"
+     }
+   }
+}
+
+#
+# Z + EM object or Jet for fake rate studies
+#
+block egammaZPlusEMOrJetEventSelection = {
+untracked PSet SelectEvents = {
+  vstring SelectEvents = {
+     "electronFilterPath",
+     "muonFilterPath"
+     }
+   }
+}
