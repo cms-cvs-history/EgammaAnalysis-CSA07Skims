@@ -19,7 +19,7 @@ include "Configuration/EventContent/data/EventContent.cff"
         untracked string fileName = "ZJetFilteredRECOSIM.root"
         using RECOSIMEventContent
         untracked PSet SelectEvents = {
-		vstring SelectEvents = {"electronFilterPath","muonFilterPath"}
+		vstring SelectEvents = {"electronFilterZPath","muonFilterZPath"}
 	}
         untracked PSet datasets ={
     		untracked string dataTier = "RECOSIM"

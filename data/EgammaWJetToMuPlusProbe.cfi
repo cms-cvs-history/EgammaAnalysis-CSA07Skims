@@ -1,13 +1,13 @@
 module EgammaWJetToMuPlusProbe = EgammaProbeSelector{
 
-string JetCollection = "iteractiveCone5CaloJets"
+InputTag JetCollection = iteractiveCone5CaloJets
 int32 MinNumberOfJets = 1
 double JetEtMin  = 15.0
 double JetEtaMin = -2.7
 double JetEtaMax = +2.7
 
-string SuperClusterBarrelCollection = "correctedHybridSuperClusters"
-string SuperClusterEndCapCollection = "correctedEndcapSuperClustersWithPreshower"
+InputTag SuperClusterBarrelCollection = correctedHybridSuperClusters
+InputTag SuperClusterEndCapCollection = correctedEndcapSuperClustersWithPreshower
 int32 MinNumberOfSuperClusters = 1
 double ScEtMin  = 5.0
 double ScEtaMin = -2.7

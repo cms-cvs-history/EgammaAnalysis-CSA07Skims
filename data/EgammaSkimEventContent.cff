@@ -37,8 +37,8 @@ block egammaVeryHighEtEventSelection = {
 block egammaWPlusEMOrJetEventSelection = {
 untracked PSet SelectEvents = {
   vstring SelectEvents = {
-     "electronFilterPath",
-     "muonFilterPath"
+     "electronFilterWPath",
+     "muonFilterWPath"
      }
    }
 }
@@ -49,8 +49,8 @@ untracked PSet SelectEvents = {
 block egammaZPlusEMOrJetEventSelection = {
 untracked PSet SelectEvents = {
   vstring SelectEvents = {
-     "electronFilterPath",
-     "muonFilterPath"
+     "electronFilterZPath",
+     "muonFilterZPath"
      }
    }
 }
