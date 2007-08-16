@@ -1,6 +1,6 @@
 module EgammaWJetToElePlusProbe = EgammaProbeSelector{
 
-InputTag JetCollection = iteractiveCone5CaloJets
+InputTag JetCollection = iterativeCone5CaloJets
 int32 MinNumberOfJets = 1
 double JetEtMin  = 15.0
 double JetEtaMin = -2.7
