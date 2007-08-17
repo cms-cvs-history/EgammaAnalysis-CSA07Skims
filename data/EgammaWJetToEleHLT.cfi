@@ -1,10 +1,8 @@
-module EgammaWJetToEleHLT = HLTHighLevel {
-  InputTag TriggerResultsTag = TriggerResults
-  bool byName = true
-  bool andOr= true
-  vstring HLTPaths ={"HLT1Electron", "HLT1ElectronRelaxed"}
-}
+module EgammaWJetToEleHLT =  hltHighLevel from "HLTrigger/HLTfilters/data/hltHighLevel.cfi"
 
+replace EgammaWJetToEleHLT.HLTPaths = {
+"HLT1Electron", "HLT1ElectronRelaxed"
+}
 
 
 

@@ -1,10 +1,5 @@
-module EgammaZJetToMuHLT = HLTHighLevel {
-  InputTag TriggerResultsTag = TriggerResults
-  bool byName = true
-  bool andOr= true
-  vstring HLTPaths ={"HLT2MuonIso", "HLT2MuonNonIso"}
+module EgammaZJetToMuHLT =  hltHighLevel from "HLTrigger/HLTfilters/data/hltHighLevel.cfi"
+
+replace EgammaZJetToMuHLT.HLTPaths = {
+"HLT2MuonIso", "HLT2MuonNonIso"
 }
-
-
-
-
