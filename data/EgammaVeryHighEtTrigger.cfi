@@ -1,11 +1,5 @@
-#
-#Egamma skim, very  high Et control sample
-#trigger selection
-#
-  module EgammaVeryHighEtTrigger = HLTHighLevel{
-        InputTag TriggerResultsTag = TriggerResults
-        bool byName = true
-        bool andOr= true
-        vstring HLTPaths =
-               {"HLT1EMVeryHighEt"}
-        }
+module EgammaVeryHighEtTrigger =  hltHighLevel from "HLTrigger/HLTfilters/data/hltHighLevel.cfi"
+
+replace EgammaVeryHighEtTrigger.HLTPaths = {
+"HLT1EMVeryHighEt"
+}
