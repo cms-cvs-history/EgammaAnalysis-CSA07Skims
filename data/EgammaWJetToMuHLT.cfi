@@ -1,9 +1,0 @@
-module EgammaWJetToMuHLT =  hltHighLevel from "HLTrigger/HLTfilters/data/hltHighLevel.cfi"
-
-replace EgammaWJetToMuHLT.HLTPaths = {
-"HLT1MuonIso", "HLT1MuonNonIso"
-}
-
-
-
-

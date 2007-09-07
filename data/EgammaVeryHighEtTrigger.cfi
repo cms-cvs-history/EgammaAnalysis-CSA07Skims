@@ -1,5 +1,0 @@
-module EgammaVeryHighEtTrigger =  hltHighLevel from "HLTrigger/HLTfilters/data/hltHighLevel.cfi"
-
-replace EgammaVeryHighEtTrigger.HLTPaths = {
-"HLT1EMVeryHighEt"
-}
