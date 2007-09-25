@@ -7,7 +7,7 @@ include "Configuration/EventContent/data/EventContent.cff"
         untracked PSet SelectEvents = {
 		vstring SelectEvents = {"electronFilterPath","muonFilterPath"}
 	}
-        untracked PSet datasets ={
+        untracked PSet dataset ={
     		untracked string dataTier = "AODSIM"
    		untracked string filterName = "EgammaZJetFilter"
         }
@@ -21,7 +21,7 @@ include "Configuration/EventContent/data/EventContent.cff"
         untracked PSet SelectEvents = {
 		vstring SelectEvents = {"electronFilterZPath","muonFilterZPath"}
 	}
-        untracked PSet datasets ={
+        untracked PSet dataset ={
     		untracked string dataTier = "RECOSIM"
    		untracked string filterName = "EgammaZJetFilter"
         }

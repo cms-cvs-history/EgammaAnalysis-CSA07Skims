@@ -7,7 +7,7 @@ include "EgammaAnalysis/CSA07Skims/data/RECOSIMEgammaSkimEventContent.cff"
       untracked string fileName = "egammaWPlusEMOrJetAODSIM.root"
       using AODSIMEgammaSkimEventContent
       using egammaWPlusEMOrJetEventSelection
-      untracked PSet datasets = {
+      untracked PSet dataset = {
 	untracked string dataTier = "USER"
 	untracked string filterName = "egammaWPlusEMOrJetAODSIM"
         }
@@ -18,7 +18,7 @@ include "EgammaAnalysis/CSA07Skims/data/RECOSIMEgammaSkimEventContent.cff"
       untracked string fileName = "egammaWPlusEMOrJetRECOSIM.root"
       using RECOSIMEgammaSkimEventContent
       using egammaWPlusEMOrJetEventSelection
-      untracked PSet datasets = {
+      untracked PSet dataset = {
 	untracked string dataTier = "USER"
 	untracked string filterName = "egammaWPlusEMOrJetRECOSIM"
         }
