@@ -1,0 +1,12 @@
+include "EgammaAnalysis/CSA07Skims/data/EgammaSkimEventContent.cff"
+include "EgammaAnalysis/CSA07Skims/data/AODSIMEgammaSkimEventContent.cff"
+
+module egammaLooseZOutputModuleAODSIM = PoolOutputModule {
+  untracked string fileName = "egammaLooseZAODSIM.root"
+  using AODSIMEgammaSkimEventContent
+  using egammaLooseZEventSelection
+  untracked PSet dataset = {
+    untracked string dataTier = "USER"
+    untracked string filterName = "egammaLooseZAODSIM"
+  }
+}

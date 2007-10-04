@@ -1,26 +1,2 @@
-include "EgammaAnalysis/CSA07Skims/data/EgammaSkimEventContent.cff"
-include "EgammaAnalysis/CSA07Skims/data/AODSIMEgammaSkimEventContent.cff"
-include "EgammaAnalysis/CSA07Skims/data/RECOSIMEgammaSkimEventContent.cff"
-
-    module egammaWPlusEMOrJetOutputModuleAODSIM = PoolOutputModule
-    {
-      untracked string fileName = "egammaWPlusEMOrJetAODSIM.root"
-      using AODSIMEgammaSkimEventContent
-      using egammaWPlusEMOrJetEventSelection
-      untracked PSet dataset = {
-	untracked string dataTier = "USER"
-	untracked string filterName = "egammaWPlusEMOrJetAODSIM"
-        }
-     }
-
-    module egammaWPlusEMOrJetOutputModuleRECOSIM = PoolOutputModule
-    {
-      untracked string fileName = "egammaWPlusEMOrJetRECOSIM.root"
-      using RECOSIMEgammaSkimEventContent
-      using egammaWPlusEMOrJetEventSelection
-      untracked PSet dataset = {
-	untracked string dataTier = "USER"
-	untracked string filterName = "egammaWPlusEMOrJetRECOSIM"
-        }
-     }
-
+include "EgammaAnalysis/CSA07Skims/data/egammaWPlusEMOrJetOutputModuleAODSIM.cfi"
+include "EgammaAnalysis/CSA07Skims/data/egammaWPlusEMOrJetOutputModuleRECOSIM.cfi"
