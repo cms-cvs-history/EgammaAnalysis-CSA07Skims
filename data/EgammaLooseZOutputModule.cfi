@@ -1,2 +1,3 @@
 include "EgammaAnalysis/CSA07Skims/data/egammaLooseZOutputModuleAODSIM.cfi"
 include "EgammaAnalysis/CSA07Skims/data/egammaLooseZOutputModuleRECOSIM.cfi"
+include "EgammaAnalysis/CSA07Skims/data/egammaLooseZOutputModuleFEVTSIM.cfi"
