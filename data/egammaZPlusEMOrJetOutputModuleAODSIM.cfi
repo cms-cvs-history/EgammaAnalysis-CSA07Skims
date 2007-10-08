@@ -1,0 +1,13 @@
+include "EgammaAnalysis/CSA07Skims/data/EgammaSkimEventContent.cff"
+include "EgammaAnalysis/CSA07Skims/data/AODSIMEgammaSkimEventContent.cff"
+
+    module egammaZPlusEMOrJetOutputModuleAODSIM = PoolOutputModule
+    {
+      untracked string fileName = "egammaZPlusEMOrJetAODSIM.root"
+      using AODSIMEgammaSkimEventContent
+      using egammaZPlusEMOrJetEventSelection
+      untracked PSet dataset = {
+	untracked string dataTier = "USER"
+	untracked string filterName = "egammaZPlusEMOrJetAODSIM"
+        }
+     }
