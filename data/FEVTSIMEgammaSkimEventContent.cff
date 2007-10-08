@@ -1,0 +1,12 @@
+include "Configuration/EventContent/data/EventContent.cff"
+include "EgammaAnalysis/CSA07Skims/data/EgammaSkimEventContent.cff"
+
+block FEVTSIMEgammaSkimEventContent = {
+ untracked vstring outputCommands = {
+ }
+}
+
+replace FEVTSIMEgammaSkimEventContent.outputCommands +=
+FEVTSIMEventContent.outputCommands
+replace FEVTSIMEgammaSkimEventContent.outputCommands +=
+egammaSkimEventContent.outputCommands
