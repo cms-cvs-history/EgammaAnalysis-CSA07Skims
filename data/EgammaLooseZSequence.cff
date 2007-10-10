@@ -11,10 +11,15 @@ include "EgammaAnalysis/CSA07Skims/data/EgammaLowEtTrigger.cfi"
 #
 
 include "EgammaAnalysis/CSA07Skims/data/EgammaZOneTrackEWKConf.cff"
+include "PhysicsTools/HepMCCandAlgos/data/allElectronsGenParticlesMatch.cfi"
+include "PhysicsTools/HepMCCandAlgos/data/allTracksGenParticlesLeptonMatch.cfi"
+include "PhysicsTools/HepMCCandAlgos/data/allSuperClustersGenParticlesLeptonMatch.cfi"
 
 sequence EgammaZOneTrackReco ={
   EgammaLowEtTrigger &   
   EgammaZOneTrack &
+  allElectronsGenParticlesMatch &
+  allTracksGenParticlesLeptonMatch & 
   EgammaZOneTrackGenParticlesMatch &
   EgammaZOneTrackFilter 
 }
@@ -24,6 +29,8 @@ include "EgammaAnalysis/CSA07Skims/data/EgammaZOneSuperClusterEWKConf.cff"
 sequence EgammaZOneSuperClusterReco ={
   EgammaLowEtTrigger &   
   EgammaZOneSuperCluster &
+  allElectronsGenParticlesMatch &
+  allSuperClustersGenParticlesLeptonMatch & 
   EgammaZOneSuperClusterGenParticlesMatch &
   EgammaZOneSuperClusterFilter 
 }
