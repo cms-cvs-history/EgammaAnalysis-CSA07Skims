@@ -1,5 +1,5 @@
 module EgammaZJetToMuHLT =  hltHighLevel from "HLTrigger/HLTfilters/data/hltHighLevel.cfi"
 
 replace EgammaZJetToMuHLT.HLTPaths = {
-"HLT2MuonNonIso"
+"HLT_DoubleMu3"
 }

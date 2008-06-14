@@ -1,6 +1,6 @@
 module EgammaLowEtTrigger =  hltHighLevel from "HLTrigger/HLTfilters/data/hltHighLevel.cfi"
 
 replace EgammaLowEtTrigger.HLTPaths = {
-"HLT1ElectronRelaxed"
+"HLT_IsoEle18_L1R"
 }
 

@@ -1,7 +1,7 @@
 module EgammaZJetToEleHLT =  hltHighLevel from "HLTrigger/HLTfilters/data/hltHighLevel.cfi"
 
 replace EgammaZJetToEleHLT.HLTPaths = {
-"HLT2Electron", "HLT2ElectronRelaxed"
+"HLT_DoubleIsoEle10_L1I", "HLT_DoubleIsoEle12_L1R"
 }
 
 
