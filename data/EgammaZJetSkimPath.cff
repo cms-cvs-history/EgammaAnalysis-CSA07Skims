@@ -1,8 +1,0 @@
-include "EgammaAnalysis/CSA07Skims/data/EgammaZJetToEleHLT.cfi"
-include "EgammaAnalysis/CSA07Skims/data/EgammaZJetToMuHLT.cfi"
-
-include "EgammaAnalysis/CSA07Skims/data/EgammaZJetToElePlusProbe.cfi" 
-include "EgammaAnalysis/CSA07Skims/data/EgammaZJetToMuPlusProbe.cfi" 
-
-path electronFilterZPath = {EgammaZJetToEleHLT & EgammaZJetToElePlusProbe} 
-path     muonFilterZPath = {EgammaZJetToMuHLT  & EgammaZJetToMuPlusProbe} 
