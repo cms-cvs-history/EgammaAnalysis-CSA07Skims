@@ -1,8 +1,0 @@
-module EgammaWJetToEleHLT =  hltHighLevel from "HLTrigger/HLTfilters/data/hltHighLevel.cfi"
-
-replace EgammaWJetToEleHLT.HLTPaths = {
-"HLT_IsoEle15_L1I", "HLT_IsoEle18_L1R"
-}
-
-
-
