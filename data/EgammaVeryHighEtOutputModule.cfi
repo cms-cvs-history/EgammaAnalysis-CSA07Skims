@@ -1,2 +1,0 @@
-include "EgammaAnalysis/CSA07Skims/data/egammaVeryHighEtOutputModuleAODSIM.cfi"
-include "EgammaAnalysis/CSA07Skims/data/egammaVeryHighEtOutputModuleRECOSIM.cfi"
